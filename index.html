@@ -3,18 +3,93 @@
     <head>
         <meta charset="UTF-8">
         <meta name="robots" content="noindex, nofollow" />
-        <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">          
+        <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">  
+		<link href="/css/style.css" rel="stylesheet">    
+		<script src="/js/script.js"></script> 
         <title>Radaiev Roman</title>
     </head>
 <body>
 	<header>      
 	</header>
 	<main>
-	фы 
+		<div class="service">
+			<div class="service__container">
+			<h1 class="white-text">Something<br>as a service</h1>
+			<div class="service__elements">
+			<div class="service__item default-animation">
+				<div class="service__content">
+					<div class="service__icon">
+					<object type="image/svg+xml" data="icons/icon_icon 01.svg" width="52" height="52"></object>
+					</div>
+					<h5 class="white-text">Digital identity</h5>
+					<div class="service__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+				</div>
+			</div>
+			<div class="service__item default-animation">
+					<div class="service__content">
+					<div class="service__icon">
+					<object type="image/svg+xml" data="icons/icon_icon 02.svg" width="52" height="52"></object>
+					</div>
+					<h5 class="white-text">Trust Score</h5>
+					<div class="service__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+				</div>
+			</div>
+			<div class="service__item default-animation">
+				<div class="service__content">
+					<div class="service__icon">
+					<object type="image/svg+xml" data="icons/icon_icon 03.svg" width="52" height="52"></object>
+					</div>
+					<h5 class="white-text">Search engine</h5>
+					<div class="service__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+				</div>
+			</div>
+			<div class="service__item default-animation">
+				<div class="service__content">
+					<div class="service__icon">
+					<object type="image/svg+xml" data="icons/icon_icon 04.svg" width="52" height="52"></object>
+					</div>
+					<h5 class="white-text">User friendly</h5>
+					<div class="service__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+				</div>
+			</div>
+			</div>
+			
+		</div>
+		</div>
+		<div class="lightpaper">
+			<div class="lightpaper__container">
+				<div class="lightpaper__container__title-container">
+			<h2 class="white-text">Our lightpaper</h2>
+			</div>
+			<div class="lightpaper__text white-text default-animation">Team is currently working on all its documents.
+				<button class="lightpaper__button">Download</button>
+			</div>
 
+			<div class="lightpaper__container__image-container">
+					<img src="/icons/Broshure 1.png" alt="Broshure">
+			</div>
+			
+		</div>
+		</div>
+		<div class="search-product">
+			<div class="search-product__container">
+				<h2 class="default-animation">Something search product</h2>
+			</div>
+		</div>
+		
 	</main>
 	<footer>
-	
+
+		<script>var postion = $('#target').offset().top,
+			height = $('#target').height();
+		$(document).on('scroll', function (){
+		  var scroll = $(document).scrollTop();
+		  if(scroll  > postion && scroll < (postion + height) ) {
+			 $('body').addClass('bg')
+			 }else {
+				$('body').removeClass('bg')
+			 }
+		})</script>
 	</footer>
 </body>
 </html>
