@@ -171,7 +171,6 @@ body
 .lightpaper
 {
     margin-top: -110px;
-    margin-bottom: -200px;
     z-index: 5;
     position: relative;
 }
@@ -298,6 +297,7 @@ body
     background-color: #EAEFF5;
     z-index: 2;
     position: relative;
+    margin-top: -200px;
 }
 .search-product__container
 {
@@ -509,8 +509,6 @@ body
     
 }
 
-
-
 @media(max-width: 950px)
 {
     .service__container {
@@ -588,10 +586,14 @@ body
         float: left;
         margin-bottom: -36px;
     }
-
+    .search-product{
+        margin-top: 0;
+    }
     .search-product__container
     {
         width: 700px;
+        overflow: hidden;
+        padding-top: 215px;
 
         &::after
         {
